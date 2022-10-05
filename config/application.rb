@@ -21,6 +21,7 @@ Bundler.require(*Rails.groups)
 
 module Phase4CookiesInRailsApi
   class Application < Rails::Application
+  include ActionController::Cookies
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
